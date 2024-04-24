@@ -1,0 +1,128 @@
+.book, .wrap,.p {
+  height: 300px;
+  width: 250px;
+}
+
+.book {
+  margin: 80px auto;
+}
+
+html {
+   background:         linear-gradient(90deg, #000000 10%, #53346D 90%); /* W3C */
+
+}
+
+.p1,.p6 {
+  background-color: brown;
+}
+
+.p2,.p3,.p4,.p5 {
+  background:         linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* W3C */
+}
+
+.book {
+  perspective: 700px;
+}
+
+.wrap {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.p {
+  position: absolute;
+  transform-origin: left center; 
+  transition: 1s linear;
+  padding: 15px;
+}
+
+.p1.flip {
+  transform: rotateY(-120deg);
+  transition: 1s linear; 
+}
+
+.p2.flip {
+  transform: rotateY(-115deg);
+  transition: 1.4s linear; 
+}
+
+.p3.flip {
+  transform: rotateY(-100deg);
+  transition: 2s linear; 
+}
+
+.p4.flip {
+  transform: rotateY(-40deg);
+  transition: 2.2s linear; 
+}
+
+.p5.flip {
+  transform: rotateY(-35deg);
+  transition: 1s linear; 
+}
+
+.p6.flip {
+  transform: rotateY(-33deg);
+  transition: 1s linear; 
+}
+
+.p1:not(.flip) {
+  transform: rotateY(-40deg);
+}
+
+.p2:not(.flip) {
+  transform: rotateY(-38deg);
+}
+
+.p3:not(.flip) {
+  transform: rotateY(-36deg);
+}
+
+.p4:not(.flip) {
+  transform: rotateY(-34deg);
+}
+
+.p5:not(.flip) {
+  transform: rotateY(-33deg);
+}
+
+.p6:not(.flip) {
+  transform: rotateY(-30deg);
+}
+
+.p1 {
+  transition: 2s linear; transform-style: preserve-3d;
+}
+
+.p2 {
+  transition: 1.85s linear; transform-style: preserve-3d;
+}
+
+.p3 {
+  transition: 1.5s linear; transform-style: preserve-3d;
+}
+
+.p4 {
+  transition: 1.1s linear; transform-style: preserve-3d;
+}
+
+.p5 {
+  transition: 2s linear; transform-style: preserve-3d;
+}
+
+.p6 {
+  transition: 2s linear; transform-style: preserve-3d;
+}
+
+h1,p,h2 {
+   backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 50px;
+}
